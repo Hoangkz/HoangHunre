@@ -39,7 +39,7 @@
             color: aliceblue;
             text-decoration: none;
             margin: 4px;
-            font-size: 10px;
+            font-size: 13px;
             font-weight: bolder;
         }
         .navbar-li>ul li{
@@ -135,7 +135,7 @@
             <!-- header -->
             <div class="header">
                 <a href="#">
-                    <img src="https://hunre.edu.vn/media/data/logo-hunre.png" style="width:400px" alt="">
+                    <img src="https://hunre.edu.vn/media/data/logo-hunre.png" style="width:500px" alt="">
                 </a>
                 <div>
                     <style >
@@ -156,7 +156,7 @@
                         }
                         
                         .search{
-                            height: 22px;
+                            height: 24px;
                         }
                         .header-notifi li{
                             margin:12px 4px;
@@ -165,7 +165,7 @@
                         .header-notifi>li>a{
                             color: black;
                             text-decoration: none;;
-                            font-size: 12px;
+                            font-size: 16px;
                             
                         }
                         .header-notifi>li:hover>a>.fa-brands{
@@ -180,6 +180,7 @@
                             font-size: 14px;
                             color: #6DBC2F;
                             font-weight: bold;
+                            padding: 0 4px;
                             
                         }
                         .header-notifition>li>a:hover{
@@ -202,7 +203,7 @@
                             justify-content: space-around;
                             list-style-type: none;
                         }
-                        @media(max-width:950px){
+                        @media(max-width:1100px){
                             .li-search,.ul2{
                                 display: none;
                             }
@@ -283,10 +284,20 @@
                     .navbar-li{
                         z-index: 10;
                         font-weight: bold;
-                        font-size: 12px;
+                        font-size: 14px;
+                    }
+                    .navbar{
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-around;
+                        background-color: #6DBC2F;
+                         width: 80%;
+                        margin: auto;
+                        margin-top:-25px;
+
                     }
                 </style>
-                <ul class="navbar" style="list-style-type: none;display: flex;justify-content: space-around;background-color: #6DBC2F; width: 80%;margin: auto;margin-top:-25px;">
+                <ul class="navbar">
                     <li class="navbar-li" style="cursor: pointer;padding: 8px 10px;color: white;">Giới thiệu
                         <ul>
                             <li style="margin:8px 24px;"><a href="#">LIÊN HỆ VỚI CÁC ĐƠN VỊ</a>
@@ -412,16 +423,16 @@
             <div style="padding-bottom: 20px;display: flex;flex-wrap: wrap;justify-content: space-evenly;">
                 <style>
                     .carousel-inner{
-                        height: 420px;
+                        height: 500px;
                         position: relative;
                         z-index: 3;
                     }
                     .carousel-item_title{
                         position: absolute;
-                        top: 250px;
+                        top: 318px;
                         color: black;
                         text-align: justify;
-                        font-size: 10px;
+                        font-size: 12px;
                         margin: 4px;
                         width: 90%;
                         left: 4px;
@@ -445,9 +456,21 @@
                     .carousel-item>div{
                         justify-content: space-evenly;
                     }
+                    .item-container{
+                        margin: auto 0;
+                        max-width: 400px;
+                        height: 500px;
+                        background-color: aliceblue;
+                        z-index: 3;
+                    }
+                    @media(max-width:1050px){
+                        .item-container{
+                            margin-top: 40px;
+                        }
+                    }
                 </style>
                 
-                <div style="margin: 20px 10px;max-width: 300px;height: 430px;background-color: aliceblue;z-index: 3;">
+                <div class="item-container">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" >
                             <div class="carousel-item active" >
@@ -476,31 +499,31 @@
                                 </div>
                             </div>
                         </div>
-                        <a style="position: absolute;height: 60px;top: 170px;left: -10px;z-index: 4;" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <a style="top: -38px;left:-16px;;z-index: 4;" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="icon_angle fa-sharp fa-solid fa-angle-left"style="color: #6DBC2F"></i>
                         </a>
-                        <a style="position: absolute;height: 60px;top: 170px;right: -10px;z-index: 4;" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <a style="top: -38px;right:-16px;;z-index: 4;" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="icon_angle fa-sharp fa-solid fa-angle-right"style="color: #6DBC2F"></i>
                         </a>
                     </div>
                 </div>
                 <style>
                     .card{
-                        width: 190px;
+                        width: 220px;
                         margin-top: 20px;
-                        height: 220px;
+                        height: 300px;
                     }
                     .card_header>img{
                         width: 96%;
                         margin: 2px 4px;
                     }
                     .card_header>h6{
-                        font-size: 11px;
+                        font-size: 13px;
                         color: #6DBC2F;
                         margin: 4px;
                     }
                     .card_container>a{
-                        font-size: 10px;
+                        font-size: 12px;
                         line-height: initial;
                         text-decoration: none;
                         text-align: justify;
@@ -520,7 +543,7 @@
                         text-decoration: underline;
                     }
                     .card_container>a>.col2{
-                        max-height: 50px;
+                        
                         text-rendering: geometricPrecision;
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
@@ -528,7 +551,7 @@
                         overflow: hidden;
                     }
                     .card_container>a>.col3{
-                        max-height: 28px;
+                        
                         text-rendering: geometricPrecision;
                         display: -webkit-box;
                         -webkit-line-clamp: 3;
@@ -537,8 +560,9 @@
                     }
                     .card-footer>.btn-success{
                         padding: 1px;
-                        font-size: 10px;
-                        margin-top: -4px;
+                        font-size: 13px;
+                        margin-left: 8px;
+                        margin-top: -14px;
                     }
                     .card-footer{
                         padding: 0;
@@ -561,8 +585,9 @@
                                             <img src="img/images-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
+                                            <a href="#"><p class="col2">☺Thông báo tổ chức Tuần sinh hoạt công dân sinh viên đầu khóa đối với sinh viên đại học chính quy khóa 12 đợt bổ sung năm 2022.</p></a>
                                             <a href="#"><p class="col2">☺Thông tin điểm chuẩn vào các ngành trình độ đại học chính quy đợt bổ sung năm 2022.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thủ tục nhập học đối với thí sinh trúng tuyển vào các ngành trình độ đại học hệ chính quy đợt bổ sung năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺Hướng dẫn thủ tục nhập học đối với thí sinh trúng tuyển vào các...</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -575,7 +600,7 @@
                                         </div>
                                         <div class="card_container">
                                             <a href="#"><p class="col3">☺Tiến tới phát thải ròng bằng không: Chính sách và thực tiễn.</p></a>
-                                            <a href="#"><p class="col3">☺International conference "Towards Net Zero Emissions: Policy and Practice".</p></a>
+                                            <a href="#"><p class="col3">☺International conference Towards Net Zero Emissions: Policy and Practice.</p></a>
                                             <a href="#"><p class="col3">☺Invitation for the International Conference.</p></a>
             
                                         </div>
@@ -593,8 +618,14 @@
                                         <div class="card_container">
                                             <div class="card_container">
                                                 <a href="#"><p class="col3">☺Giới thiệu Ngành Marketing.</p></a>
+                                                <a href="#">
+                                                    <p class="col3">☺Kế toán - Kiểm toán và Phân tích tài chính.</p>
+                                                </a>
                                                 <a href="#"><p class="col3">☺Giới thiệu ngành Công nghệ thông tin.</p></a>
                                                 <a href="#"><p class="col3">☺Ngành Đảm bảo chất lượng và An toàn thực phẩm.</p></a>
+                                                <a href="#">
+                                                    <p class="col3">☺Kỹ thuật Trắc địa - Bản đồ.</p>
+                                                </a>
                                             </div></div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -653,12 +684,12 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tin mới nhất</h6>
+                                            <h6>Phòng đào tạo</h6>
                                             <img src="img/222-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Thông tin điểm chuẩn vào các ngành trình độ đại học chính quy đợt bổ sung năm 2022.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thủ tục nhập học đối với thí sinh trúng tuyển vào các ngành trình độ đại học hệ chính quy đợt bổ sung năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺Thời khoá HK1 năm học 2022-2023 Khóa 12.</p></a>
+                                            <a href="#"><p class="col2">☺Kết quả dự kiến xét cảnh báo, buộc thôi học (bổ sung) theo kết quả học tập học kỳ 2 năm học 2021 - 2022 đối với sinh viên đại học chính quy các khóa 9, 10, 11.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -666,14 +697,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Hội thảo KHCN năm 2022</h6>
+                                            <h6>Khoa môi trường</h6>
                                             <img src="img/download-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Tiến tới phát thải ròng bằng không: Chính sách và thực tiễn.</p></a>
-                                            <a href="#"><p class="col3">☺International conference "Towards Net Zero Emissions: Policy and Practice".</p></a>
-                                            <a href="#"><p class="col3">☺Invitation for the International Conference.</p></a>
-            
+                                            <a href="#"><p class="col3">☺Chương trình đào tạo ngành Sinh học ứng dụng áp dụng từ khóa tuyển sinh năm 2022.</p></a>
+                                            <a href="#"><p class="col3">☺Chương trình đào tạo ngành Đảm bảo chất lượng và An toàn thực phẩm áp dụng từ khóa tuyển sinh năm 2022.</p></a>            
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -683,14 +712,14 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Giới thiệu ngành đào tạo</h6>
+                                            <h6>Khoa công nghệ thông tin</h6>
                                             <img src="img/11111-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
                                             <div class="card_container">
-                                                <a href="#"><p class="col3">☺Giới thiệu Ngành Marketing.</p></a>
-                                                <a href="#"><p class="col3">☺Giới thiệu ngành Công nghệ thông tin.</p></a>
-                                                <a href="#"><p class="col3">☺Ngành Đảm bảo chất lượng và An toàn thực phẩm.</p></a>
+                                                <a href="#"><p class="col3">☺Tổ chức đón tiếp, nhập học cho sinh viên Đại học chính quy đợt 1 năm 2022.</p></a>
+                                                <a href="#"><p class="col3">☺Khoa Công nghệ Thông tin tuyển sinh hệ đào tạo Đại học chính quy năm 2022.</p></a>
+                                                <a href="#"><p class="col3">☺Trường Đại học Tài nguyên và Môi trường Hà Nội công bố...</p></a>
                                             </div></div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -698,15 +727,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tuyển sinh đại học</h6>
+                                            <h6>Khoa quản lý đất đai</h6>
                                             <img src="img/tai-xuong-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đăng ký xét tuyển trực tuyến.</p></a>
-                                            <a href="#"><p class="col3">☺Danh sách trúng tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Tuyển sinh đại học chính quy.</p></a>
-                                            <a href="#"><p class="col3">☺Hỏi đáp trực tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Câu hỏi thường gặp</p></a>
+                                            <a href="#"><p class="col3">☺THÔNG BÁO Về việc tổ chức tốt nghiệp cho các hệ đào tạo đại học, cao đẳng chính quy Đợt 3 – tháng 11 năm 2022.</p></a>
+                                            <a href="#"><p class="col3">☺TUẦN SINH HOẠT CÔNG DÂN - SINH VIÊN ĐẦU KHÓA ĐH12 NGÀNH QUẢN LÝ ĐẤT ĐAI VÀ BẤT ĐỘNG SẢN.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -716,12 +742,12 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tiêu điểm</h6>
+                                            <h6>Khoa Trắc địa bản đồ và Thông tin địa lý</h6>
                                             <img src="img/11111-cr-425x200.png" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Danh sách thí sinh nộp hồ sơ xét tuyển đại học chính quy 2022 theo hình thức trực tiếp, bưu điện.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thí sinh trúng tuyển trình độ đại học hệ chính quy theo phương thức xét tuyển kết quả thi THPT thực hiện xác nhận nhập học và làm thủ tục nhập học trong thời gian ảnh hưởng dịch bệnh Covid-19.</p></a>
+                                            <a href="#"><p class="col2">☺THÔNG BÁO Về việc tuyển sinh đào tạo trình độ thạc sĩ đợt 2 năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺THÔNG BÁO XÉT TUYỂN BỔ SUNG ĐẠI HỌC CHÍNH QUY NĂM 2022.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -729,13 +755,14 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Khoa môi kinh tế TN&MT</h6>
+                                            <h6>Khoa Địa chất</h6>
                                             <img src="img/222-cr-425x200 (1).jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đại hội Chi bộ SInh viên Kinh tế Tài nguyên và Môi trường nhiệm kỳ 2022 - 2025.</p></a>
-                                            <a href="#"><p class="col3">☺Lễ kết nạp Đảng viên mới cho sinh viên ưu tú lần 3 năm 2022.</p></a>
-                                            <a href="#"><p class="col3">☺Chiến dịch "Thu tới trường 2022" của Đội sinh viên tình nguyện Khoa Kinh tế Tài nguyên và Môi trường</p></a>
+                                            <a href="#"><p class="col3">☺Chương trình đào tạo - Ngành Kỹ thuật địa chất.</p></a>
+                                            <a href="#"><p class="col3">☺Lý lịch khoa học giảng viên khoa Địa chất.</p></a>
+                                            <a href="#"><p class="col3">☺BÁO CÁO KẾT QUẢ CÔNG KHAI NĂM HỌC 2021-2022</p></a>
+                                            <a href="#"><p class="col3">☺Bản mô tả chương trình đào tạo ngành Kỹ thuật địa chất.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -749,12 +776,14 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tin mới nhất</h6>
+                                            <h6>Khoa tài nguyên nước</h6>
                                             <img src="img/33-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Thông tin điểm chuẩn vào các ngành trình độ đại học chính quy đợt bổ sung năm 2022.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thủ tục nhập học đối với thí sinh trúng tuyển vào các ngành trình độ đại học hệ chính quy đợt bổ sung năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺Tuần sinh hoạt công dân-sinh viên và Chào mưng tân sinh viên ngành Quản lý Tài nguyên nước (ĐH12 TNN).</p></a>
+                                            <a href="#"><p class="col2">☺Chính sách bảo vệ tài nguyên nước.</p></a>
+                                            <a href="#"><p class="col2">☺Đề cương chi tiết ngành Quản lý Tài nguyên nước.</p></a>
+                                            
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -762,13 +791,13 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Hội thảo KHCN năm 2022</h6>
+                                            <h6>Bộ môn luật</h6>
                                             <img src="img/44-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Tiến tới phát thải ròng bằng không: Chính sách và thực tiễn.</p></a>
-                                            <a href="#"><p class="col3">☺International conference "Towards Net Zero Emissions: Policy and Practice".</p></a>
-                                            <a href="#"><p class="col3">☺Invitation for the International Conference.</p></a>
+                                            <a href="#"><p class="col3">☺Kế hoạch tổ chức lễ bế giảng và trao bằng tốt nghiệp năm 2022.</p></a>
+                                            <a href="#"><p class="col3">☺GIẢI BÓNG ĐÁ SINH VIÊN KHOA LÝ LUẬN CHÍNH TRỊ NĂM 2022.</p></a>
+                                            <a href="#"><p class="col3">☺SINH HOẠT CHUYÊN ĐỀ NGHIÊN CỨU KHOA HỌC CHO SINH VIÊN NGÀNH LUẬT.</p></a>
             
                                         </div>
                                         <div class="card-footer">
@@ -779,14 +808,14 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Giới thiệu ngành đào tạo</h6>
+                                            <h6>Khoa Biển và hải đảo</h6>
                                             <img src="img/55-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
                                             <div class="card_container">
-                                                <a href="#"><p class="col3">☺Giới thiệu Ngành Marketing.</p></a>
-                                                <a href="#"><p class="col3">☺Giới thiệu ngành Công nghệ thông tin.</p></a>
-                                                <a href="#"><p class="col3">☺Ngành Đảm bảo chất lượng và An toàn thực phẩm.</p></a>
+                                                <a href="#"><p class="col3">☺Chương trình đào tạo hệ đại học chính quy ngành Quản lý Biển năm 2022 - 2023.</p></a>
+                                                <a href="#"><p class="col3">☺Nghiên cứu khoa học sinh viên năm 2022.</p></a>
+                                                <a href="#"><p class="col3">☺Hội thảo hưởng ứng Tuần lễ Biển và Hải đảo Việt Nam và Ngày Đại dương thế giới năm 2022.</p></a>
                                             </div></div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -794,15 +823,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tuyển sinh đại học</h6>
+                                            <h6>Khoa Biến đổi khí hậu và Phát triển bền vững</h6>
                                             <img src="img/66-cr-425x200.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đăng ký xét tuyển trực tuyến.</p></a>
-                                            <a href="#"><p class="col3">☺Danh sách trúng tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Tuyển sinh đại học chính quy.</p></a>
-                                            <a href="#"><p class="col3">☺Hỏi đáp trực tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Câu hỏi thường gặp</p></a>
+                                            <a href="#"><p class="col3">☺Đại hội Chi bộ Khí tượng thủy văn - Biến đổi khí hậu nhiệm kỳ 2022 – 2025.</p></a>
+                                            <a href="#"><p class="col3">☺TUYỂN SINH ĐẠI HỌC CHÍNH QUY NĂM 2022 BỘ MÔN BIẾN ĐỔI KHÍ HẬU VÀ PHÁT TRIỂN BỀN VỮNG TRƯỜNG ĐẠI HỌC TÀI NGUYÊN VÀ MÔI TRƯỜNG HÀ NỘI.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -812,12 +838,12 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tiêu điểm</h6>
+                                            <h6>Bộ môn ngoại ngữ</h6>
                                             <img src="img/77.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Danh sách thí sinh nộp hồ sơ xét tuyển đại học chính quy 2022 theo hình thức trực tiếp, bưu điện.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thí sinh trúng tuyển trình độ đại học hệ chính quy theo phương thức xét tuyển kết quả thi THPT thực hiện xác nhận nhập học và làm thủ tục nhập học trong thời gian ảnh hưởng dịch bệnh Covid-19.</p></a>
+                                            <a href="#"><p class="col2">☺Thông báo thời khóa biểu tuần sinh hoạt công dân sinh viên đầu khóa đối với sinh viên đại học chính quy khóa 12 nhập học đợt 2 năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺KH_Tổ chức đón tiếp, nhập học cho sinh viên đại học chính quy (đợt bổ sung năm 2022).</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -825,13 +851,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Khoa môi kinh tế TN&MT</h6>
+                                            <h6>Khoa Lý luận chính trị</h6>
                                             <img src="img/88.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đại hội Chi bộ SInh viên Kinh tế Tài nguyên và Môi trường nhiệm kỳ 2022 - 2025.</p></a>
-                                            <a href="#"><p class="col3">☺Lễ kết nạp Đảng viên mới cho sinh viên ưu tú lần 3 năm 2022.</p></a>
-                                            <a href="#"><p class="col3">☺Chiến dịch "Thu tới trường 2022" của Đội sinh viên tình nguyện Khoa Kinh tế Tài nguyên và Môi trường</p></a>
+                                            <a href="#"><p class="col3">☺Đề cương chi tiết.</p></a>
+                                            <a href="#"><p class="col3">☺THÔNG BÁO VỀ LỊCH THI KẾT THÚC HỌC PHẦN GIÁO DỤC QUỐC PHÒNG 3 VÀ 4 (Áp dụng đối với sinh viên đại học chính quy Khóa 10 ).</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -845,12 +870,13 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tin mới nhất</h6>
+                                            <h6>Khoa Khoa học Đại cương</h6>
                                             <img src="img/11.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Thông tin điểm chuẩn vào các ngành trình độ đại học chính quy đợt bổ sung năm 2022.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thủ tục nhập học đối với thí sinh trúng tuyển vào các ngành trình độ đại học hệ chính quy đợt bổ sung năm 2022.</p></a>
+                                            <a href="#"><p class="col2">☺DANH SÁCH THÍ SINH TRÚNG TUYỂN ĐẠI HỌC CHÍNH QUY ĐỢT BỔ SUNG NĂM 2022.</p></a>
+                                            <a href="#"><p class="col2">☺Thông báo xét tặng NGND, NGUT năm 2023.</p></a>
+                                            <a href="#"><p class="col2">☺Danh sách giảng viên các bộ môn.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -858,14 +884,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Hội thảo KHCN năm 2022</h6>
+                                            <h6>Trung tâm Hợp tác ĐT và Hướng nghiệp SV</h6>
                                             <img src="img/2.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Tiến tới phát thải ròng bằng không: Chính sách và thực tiễn.</p></a>
-                                            <a href="#"><p class="col3">☺International conference "Towards Net Zero Emissions: Policy and Practice".</p></a>
-                                            <a href="#"><p class="col3">☺Invitation for the International Conference.</p></a>
-            
+                                            <a href="#"><p class="col3">☺Quyết định về việc công nhận đạt chuẩn đầu ra tin học, tiếng Anh đối với sinh viên học dự thi đợt 4 năm 2022.</p></a>
+                                            <a href="#"><p class="col3">☺Thông báo Về việc Kế hoạch ôn tập, thi chuẩn đầu ra ngoại ngữ, tin học đợt 4 năm 2022.</p></a>            
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -875,14 +899,14 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Giới thiệu ngành đào tạo</h6>
-                                            <img src="" alt="a">
+                                            <h6>Phòng công tác Học sinh - Sinh viên</h6>
                                         </div>
                                         <div class="card_container">
                                             <div class="card_container">
-                                                <a href="#"><p class="col3">☺Giới thiệu Ngành Marketing.</p></a>
-                                                <a href="#"><p class="col3">☺Giới thiệu ngành Công nghệ thông tin.</p></a>
-                                                <a href="#"><p class="col3">☺Ngành Đảm bảo chất lượng và An toàn thực phẩm.</p></a>
+                                                <a href="#"><p class="col3">☺3731. Thông báo Kiểm tra, đối soát danh sách dự kiến công nhận kết quả rèn luyện, HBKKHT, Khen thưởng, miễn giảm học phí, Trợ cấp xã hội, Hỗ trợ chi phí học tập.</p></a>
+                                                <a href="#"><p class="col3">☺Sổ tay học viên CH8 (2022).</p></a>
+                                                <a href="#"><p class="col3">☺Sổ tay sinh viên khóa 12 (2022).</p></a>
+                                                <a href="#"><p class="col3">☺Kế hoạch tổ chức "Tuần SHCD sinh viên" đầu khóa cho sinh viên đại học hệ chính quy khóa 12 (Niên khóa 2022 – 2026).</p></a>
                                             </div></div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -890,15 +914,12 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tuyển sinh đại học</h6>
+                                            <h6>Khoa Khí tượng thủy văn</h6>
                                             <img src="img/3.png" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đăng ký xét tuyển trực tuyến.</p></a>
-                                            <a href="#"><p class="col3">☺Danh sách trúng tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Tuyển sinh đại học chính quy.</p></a>
-                                            <a href="#"><p class="col3">☺Hỏi đáp trực tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Câu hỏi thường gặp</p></a>
+                                            <a href="#"><p class="col3">☺Chương trình đào tạo và Đề cương chi tiết ngành Khí tượng và Khí hậu học năm 2022 - Trình độ Thạc sĩ.</p></a>
+                                            <a href="#"><p class="col3">☺Chương trình đào tạo và Đề cương chi tiết ngành Thủy văn học năm 2022 - Trình độ Thạc sĩ.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -908,12 +929,13 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tiêu điểm</h6>
-                                            <img src="" alt="a">
+                                            <h6>Phòng Tổ chức - Hành chính</h6>
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Danh sách thí sinh nộp hồ sơ xét tuyển đại học chính quy 2022 theo hình thức trực tiếp, bưu điện.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thí sinh trúng tuyển trình độ đại học hệ chính quy theo phương thức xét tuyển kết quả thi THPT thực hiện xác nhận nhập học và làm thủ tục nhập học trong thời gian ảnh hưởng dịch bệnh Covid-19.</p></a>
+                                            <a href="#"><p class="col2">☺Về việc Công khai thông tin về đội ngũ giảng viên cơ hữu của Trường Đại học Tài nguyên và Môi trường Hà Nội năm học 2022-2023.</p></a>
+                                            <a href="#"><p class="col2">☺Quyết định Ban hành quy chế tổ chức và hoạt động của Trường ĐHTN&MTHN.</p></a>
+                                            <a href="#"><p class="col2">☺NQ_Ban hành Quy chế tổ chức và hoạt động của Trường Đại học Tài nguyên và Môi trường Hà Nội.</p></a>
+                                            <a href="#"><p class="col2">☺Chiến lược phát triển nhân sự trường Đại học TN&MTHN đến năm 2025, tầm nhìn đến năm 2030.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -921,13 +943,13 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Khoa môi kinh tế TN&MT</h6>
+                                            <h6>Phòng Khảo thí và Đảm bảo chất lượng giáo dục</h6>
                                             <img src="img/4.jpg" alt="">
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đại hội Chi bộ SInh viên Kinh tế Tài nguyên và Môi trường nhiệm kỳ 2022 - 2025.</p></a>
-                                            <a href="#"><p class="col3">☺Lễ kết nạp Đảng viên mới cho sinh viên ưu tú lần 3 năm 2022.</p></a>
-                                            <a href="#"><p class="col3">☺Chiến dịch "Thu tới trường 2022" của Đội sinh viên tình nguyện Khoa Kinh tế Tài nguyên và Môi trường</p></a>
+                                            <a href="#"><p class="col3">☺Năm học 2022-2023.</p></a>
+                                            <a href="#"><p class="col3">☺Quy định đánh giá kết quả học tập của người học.</p></a>
+                                            <a href="#"><p class="col3">☺Quy định thực hiện công khai thông tin tại Trường Đại học Tài nguyên và Môi trường Hà Nội.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -954,14 +976,11 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Hội thảo KHCN năm 2022</h6>
-                                            <img src="" alt="a">
+                                            <h6>Phòng Khoa học công nghệ và Hợp tác quốc tế</h6>
                                         </div>
                                         <div class="card_container">
                                             <a href="#"><p class="col3">☺Tiến tới phát thải ròng bằng không: Chính sách và thực tiễn.</p></a>
-                                            <a href="#"><p class="col3">☺International conference "Towards Net Zero Emissions: Policy and Practice".</p></a>
-                                            <a href="#"><p class="col3">☺Invitation for the International Conference.</p></a>
-            
+                                            <a href="#"><p class="col3">☺Hội nghị tổng kết sinh viên nghiên cứu khoa học năm học 2021 - 2022 và phát động phong trào nghiên cứu khoa học 2022 - 2023.</p></a>            
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -971,14 +990,13 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Giới thiệu ngành đào tạo</h6>
-                                            <img src="" alt="a">
+                                            <h6>Đoàn thanh niên CSHCM</h6>
                                         </div>
                                         <div class="card_container">
                                             <div class="card_container">
-                                                <a href="#"><p class="col3">☺Giới thiệu Ngành Marketing.</p></a>
-                                                <a href="#"><p class="col3">☺Giới thiệu ngành Công nghệ thông tin.</p></a>
-                                                <a href="#"><p class="col3">☺Ngành Đảm bảo chất lượng và An toàn thực phẩm.</p></a>
+                                                <a href="#"><p class="col3">☺Giới thiệu và các cơ cấu tổ chức bộ máy.</p></a>
+                                                <a href="#"><p class="col3">☺Tin tức và Sự kiện các vẫn đề thuộc Đoàn.</p></a>
+                                                <a href="#"><p class="col3">☺Thông tin khác.</p></a>
                                             </div></div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -986,15 +1004,14 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tuyển sinh đại học</h6>
-                                            <img src="" alt="a">
+                                            <h6>Tạp chí KHTNMT</h6>
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đăng ký xét tuyển trực tuyến.</p></a>
-                                            <a href="#"><p class="col3">☺Danh sách trúng tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Tuyển sinh đại học chính quy.</p></a>
-                                            <a href="#"><p class="col3">☺Hỏi đáp trực tuyển.</p></a>
-                                            <a href="#"><p class="col3">☺Câu hỏi thường gặp</p></a>
+                                            <a href="#"><p class="col3">☺Giới thiệu tạp chí.</p></a>
+                                            <a href="#"><p class="col3">☺Quy định và thể lệ viết bài.</p></a>
+                                            <a href="#"><p class="col3">☺Các tạp chí đã xuất bản.</p></a>
+                                            <a href="#"><p class="col3">☺Liên hệ với tạp chí.</p></a>
+                                            <a href="#"><p class="col3">☺Hội đồng biên tập tạp chí.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -1004,12 +1021,14 @@
                                 <div class="col-container">
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Tiêu điểm</h6>
-                                            <img src="" alt="a">
+                                            <h6>Trung tâm dịch vụ trường học</h6>
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col2">☺Danh sách thí sinh nộp hồ sơ xét tuyển đại học chính quy 2022 theo hình thức trực tiếp, bưu điện.</p></a>
-                                            <a href="#"><p class="col2">☺Hướng dẫn thí sinh trúng tuyển trình độ đại học hệ chính quy theo phương thức xét tuyển kết quả thi THPT thực hiện xác nhận nhập học và làm thủ tục nhập học trong thời gian ảnh hưởng dịch bệnh Covid-19.</p></a>
+                                            <a href="#"><p class="col2">☺KHU NHÀ Ở SINH VIÊN MỸ ĐÌNH 2 – KÝ TÚC XÁ KIỂU MẪU TẠI HÀ NỘI.</p></a>
+                                            <a href="#"><p class="col2">☺KÝ TÚC XÁ NHÀ G SẴN SÀNG PHỤC VỤ SINH VIÊN SAU ĐỢT NGHỈ PHÒNG DỊCH COVID-19 VÀ ĐÓN NĂM HỌC MỚI 2020-2021.</p></a>
+                                            <a href="#"><p class="col2">☺THÔNG TIN LIÊN HỆ.</p></a>
+                                            <a href="#"><p class="col2">☺CHÀO ĐÓN SINH VIÊN TRỞ LẠI TRƯỜNG SAU ĐỢT NGHỈ PHÒNG DỊCH COVID-19.</p></a>
+
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -1017,13 +1036,14 @@
                                     </div>
                                     <div class="card">
                                         <div class="card_header">
-                                            <h6>Khoa môi kinh tế TN&MT</h6>
-                                            <img src="" alt="a">
+                                            <h6>Trung tâm Thư viện và Công nghệ thông tin</h6>
                                         </div>
                                         <div class="card_container">
-                                            <a href="#"><p class="col3">☺Đại hội Chi bộ SInh viên Kinh tế Tài nguyên và Môi trường nhiệm kỳ 2022 - 2025.</p></a>
-                                            <a href="#"><p class="col3">☺Lễ kết nạp Đảng viên mới cho sinh viên ưu tú lần 3 năm 2022.</p></a>
-                                            <a href="#"><p class="col3">☺Chiến dịch "Thu tới trường 2022" của Đội sinh viên tình nguyện Khoa Kinh tế Tài nguyên và Môi trường</p></a>
+                                            <a href="#"><p class="col3">☺THÔNG BÁO Về việc khảo sát kiến phản hồi từ người sử dụng  hệ thống phòng thực hành máy tính.</p></a>
+                                            <a href="#"><p class="col3">☺Hướng dẫn đăng nhập Wifi: HUNRE SINH VIEN.</p></a>
+                                            <a href="#"><p class="col3">☺Tình hình an toàn, an ninh thông tin tại Bộ Tài nguyên và Môi trường tháng 12 năm 2020</p></a>
+                                            <a href="#"><p class="col3">☺LUẬT AN NINH MẠNG.</p></a>
+                                            <a href="#"><p class="col3">☺Tạo mật khẩu mạnh và tăng cường bảo mật cho tài khoản.</p></a>
                                         </div>
                                         <div class="card-footer">
                                             <a href="#"class="btn btn-success" style="color: white;">+Xem thêm</a>
@@ -1033,11 +1053,18 @@
                             </div>
                         </div>
                     </div>
-                    <a style="z-index: 4;top:20px;left: -50px;" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon"style="color:yellow" aria-hidden="true"></span>
+                    <style>
+                        .icon_angle{
+                            font-size: 40px;                            
+                            color: yellow;
+                            
+                        }
+                    </style>
+                    <a style="z-index: 4;top:20px;left:-10px;width: 10px!important;" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="icon_angle fa-sharp fa-solid fa-angle-left"></i>
                     </a>
-                    <a style="z-index: 4;top:20px;right: -50px;" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <a style="z-index: 4;top:20px;right:-10px;width: 10px!important;" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="icon_angle fa-sharp fa-solid fa-angle-right"></i>
                     </a>
                 </div>
             </div>
