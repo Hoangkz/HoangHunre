@@ -1,1 +1,1 @@
-<?php "websiteHunre.html"?>
+<?php include("websiteHunre.html")?>
